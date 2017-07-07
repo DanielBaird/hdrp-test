@@ -1,0 +1,451 @@
+
+:root {
+	--light: #ddd;
+	--midlight: #aaa;
+	--mid: #888;
+	--middark: #666;
+	--dark: #444;
+
+	--edge: #eee;
+	--link: #349;
+	--highlight: #f0f6ff;
+
+	--width: 70rem;
+	--short: 18rem;
+
+	--pad: 3rem;
+	--twopad: calc(var(--pad) * 2);
+	--halfpad: calc(var(--pad) / 2);
+	--qpad: calc(var(--pad) / 4);
+	--negpad: calc(var(--pad) * -1);
+
+  --base-font-size: 16px;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+html {
+	font-family:
+        -apple-system,       /* default macOS font for Safari/webkit */
+        BlinkMacSystemFont,  /* default macOS font for Chrome/blink */
+        "Segoe UI",          /* default Windows font */
+        "Roboto",            /* default Android font */
+        "Fira Sans",         /* default Mozilla font */
+        "Droid Sans",        /* default older Android font */
+        "Helvetica Neue",    /* everyone else */
+        sans-serif;          /* Blackberry users, lol */
+	font-weight: 200;
+	font-size: var(--base-font-size);
+	line-height: 1.5;
+	background: white;
+}
+
+li { display: block; }
+b, strong { font-weight: bold }
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+/* header ---------------------------------------------------- */
+header {
+	line-height: var(--twopad);
+	font-size: 125%;
+	text-align: right;
+	background: var(--dark);
+	color: var(--edge);
+}
+header a { color: var(--edge); }
+header .jcubrand {
+	margin-left: var(--pad);
+	float: left;
+}
+header .jcubrand img {
+	margin-right: var(--pad);
+}
+header .login {
+	font-size: 80%;
+	margin: 0 var(--halfpad); 
+}
+header input {
+	line-height: var(--pad);
+}
+
+/* mode switcher --------------------------------------------- */
+.switcher {
+	font-size: 0.8rem;
+	position: fixed;
+	bottom: 20%;
+	right: 1rem;
+	border: 1px solid rgba(0,255,0, 0.25);
+	border-radius: 0.66rem;
+	padding: 0.25rem;
+}
+.switcher button {
+	outline: none;
+	float: right;
+	clear: right;
+	line-height: 1rem;
+	padding: 0 0.66em;
+	margin-top: 0.33em;
+	border: 1px solid green;
+	border-radius: 0.5rem;
+	color: darkgreen;
+	background: lightgreen;
+	opacity: 0.11;
+}
+.switcher button:hover {
+	opacity: 0.66;
+}
+
+/* ALL navs -------------------------------------------------- */
+nav {
+	font-size: 80%;
+	text-transform: uppercase;
+	font-weight: 800;
+	line-height: 2;
+	color: var(--mid);
+}
+nav ul {
+	display: flex;
+}
+nav li {
+	flex: 1;
+	display: block;
+	text-align: center;
+}
+.pagenav li.current {
+	color: var(--dark);
+}
+
+/* pagenav --------------------------------------------------- */
+.pagenav {
+	background: var(--edge);
+}
+.pagenav ul {
+	max-width: var(--width);
+	margin: 0 auto;
+}
+
+/* content and columns --------------------------------------- */
+
+.content {
+	display: flex;
+	max-width: var(--width);
+	margin: 0 auto;
+	padding: var(--pad) 0 var(--twopad);
+}
+
+.tersecol {
+	width: 30%;
+	border-right: 1px solid var(--edge);
+	padding-right: var(--pad);
+}
+
+.detailcol {
+	flex: 1;
+	max-width: calc((var(--width) * 0.7));
+	padding-left: var(--pad);
+}
+
+/* infonav --------------------------------------------------- */
+.infonav {
+	margin: 0 0 var(--halfpad) var(--negpad);
+	padding: var(--qpad) 0 var(--qpad) var(--pad);
+	border-bottom: 1px solid var(--edge);
+}
+.infonav ul {
+	display: block;
+	text-align: left;
+	max-width: var(--width);
+	margin: 0 auto;
+}
+.infonav li {
+	display: inline-block;
+	padding: 0 var(--halfpad) 0.1em var(--qpad);
+	line-height: 1;
+	text-align: center;
+}
+.infonav li.current a {
+	color: var(--dark);
+}
+.infonav li::before {
+	display: inline-block;
+  position: relative;
+  top: .05em;
+  margin-left: -1rem;
+	width: 1rem;
+  font-family: webhostinghub-glyphs;
+  content: "\e39a";
+  color: rgba(255,255,255, 0);
+	transition: 0.33s;
+}
+.infonav li.current::before {
+  color: var(--dark);
+}
+.infonav a {
+  color: var(--mid);
+}
+
+/* sections, generally --------------------------------------- */
+
+section {
+	border-bottom: 1px solid var(--edge);
+	margin-bottom: var(--halfpad);
+	padding-bottom: var(--halfpad);
+}
+/* use section:before to add section titles */
+section:before {
+	display: block;
+	font-size: 80%;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: var(--mid);
+	margin-bottom: var(--qpad);
+}
+section.shorten {
+	overflow: hidden;
+	max-height: var(--short);
+	position: relative;
+}
+section.shorten:after {
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	bottom: 0;
+	width: 100%;
+	content:'see more...\00a0\00a0\00a0';
+	font-size: 80%;
+	font-weight: 600;
+	font-style: italic;
+	color: var(--mid);
+	text-align: right;
+	text-shadow: 0 0 0.2em white, 0 0 0.3em white, 0 0 0.4em white;
+
+	height: var(--pad);
+	/*padding: var(--halfpad) 0;*/
+	line-height: var(--pad);
+
+	background-image: linear-gradient(to top, rgba(255,255,255, 1) var(--halfpad), rgba(255,255,255, 0.75) var(--pad), rgba(255,255,255, 0));
+}
+
+/* sections, specific ---------------------------------------- */
+
+
+/* ----- avatar */
+
+section.avatar img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* ----- metrics */
+section.metrics ul {
+  display: flex;
+  text-align: center;
+}
+section.metrics li {
+  flex: 1;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+}
+section.metrics .display-4 {
+  display: block;
+}
+.metric {
+  display: block;
+  font-size: 200%;
+  font-weight: 500;
+}
+.metric.pubs::after {
+  content: '+';
+  font-size: 70%;
+  font-weight: 400;
+}
+.money::before {
+  content: '$';
+}
+
+
+/* ----- primary ids */
+
+section.primary_ids li {
+	min-height: 1rem;
+}
+section.primary_ids a::before {
+  display: inline-block;
+  margin-right: 10px;
+	min-height: var(--pad);
+  vertical-align: middle;
+}
+.orcid::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/ORCID.png); }
+.connect::before { content: ''; }
+.join::before { content: ''; }
+.advisor::before { content: ''; }
+
+
+/* ----- external ids */
+
+section.external_ids a::before {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.twitter::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Twitter.png); }
+.website::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Homepage.png); }
+.academia::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Academia_edu.png); }
+.researchgate::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/ResearchGate.png); }
+.conversation::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/The_Conversation.png); }
+.scholar::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Google_Scholar.png); }
+.scopus::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Scopus_AuthorID.png); }
+
+
+/* ----- name etc */
+
+section.name-assoc {
+	--namesize: 4;
+}
+section.name-assoc h1 {
+	font-size: calc(100% * var(--namesize));
+	line-height: 1.2;
+	font-weight: 100;
+}
+section.name-assoc h1 span {
+	display: block;
+	font-size: calc(100% / var(--namesize));
+}
+section.name-assoc p {
+	font-size: 85%;
+	color: var(--mid);
+	padding: var(--qpad) 0;
+
+	/*max-width: calc(var(--width) * 0.66);
+	white-space: nowrap;
+	overflow: hidden;	
+	text-overflow: ellipsis; */
+}
+section.name-assoc li {
+	padding-bottom: 0.2em;
+}
+
+/* ----- short name summary */
+
+section.shortname {
+	max-width: calc(var(--width) * 0.66);
+	white-space: nowrap;
+	overflow: hidden;	
+	text-overflow: ellipsis; 
+}
+section.shortname h1 {
+	display: inline;
+	font-size: 150%;
+	line-height: 1.2;
+	font-weight: 100;
+	padding-bottom: 0;
+	padding-right: 0.66rem;
+	margin-bottom: 0;
+}
+section.shortname .quals {
+	display: inline;
+	font-size: 85%;
+	color: var(--mid);
+	padding: 0;
+}
+
+/* ----- student project */
+
+section.project::before { content: 'Higher Degree Project'; }
+section.grants h1,
+section.project {
+	border-top: 1px solid var(--edge);
+	background: rgba(150,210,255, 0.1);
+	background: var(--highlight);
+	padding: var(--pad);
+	margin-top: calc(-1 * var(--halfpad) - 1px); /* the -1px covers the previous section's border */
+	margin-left: calc(-1 * var(--pad)); /* touch the left border */
+	margin-bottom: var(--pad);
+}
+
+/* ----- bio */
+
+section.bio:before { content: 'Bio'; }
+
+/* ----- honours */
+
+section.awards:before { content: 'Awards'; }
+
+/* ----- supervision */
+
+section.current:before { content: 'Current students'; }
+
+/* ----- teaching */
+
+section.teaching:before { content: 'Teaching'; }
+section.teaching li {
+	padding-bottom: 0.2em;
+}
+
+/* ----- pubsummary */
+
+section.pubsummary {
+	text-align: center;
+	font-size: var(--halfpad);
+	line-height: var(--pad);
+}
+section.pubsummary span {
+	line-height: var(--pad);
+	padding-right: var(--qpad);
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/* ----- pubs */
+.publications section li { margin-bottom: var(--halfpad); }
+section.journal-articles:before { content: 'Journal Articles'; }
+section.chapters:before { content: 'Book Chapters'; }
+section.datasets:before { content: 'Datasets'; }
+
+
+/* footer ---------------------------------------------------- */
+
+footer {
+	border-top: var(--twopad) solid var(--edge);
+	display: flex;
+}
+footer > section {
+	flex: 1;
+	display: block;
+  border-bottom: 0 none;
+}
+footer section::before {
+  color: var(--light);
+  border-bottom: 1px solid var(--light);
+  max-width: 80%;
+  font-size: 115%;
+  line-height: 2;
+  font-weight: 600;
+  text-transform: none;
+}
+footer a:hover,
+footer a {
+  color: var(--light);
+}
+footer section.logo { text-align: center; }
+footer section.navigate:before { content: 'Navigate'; }
+footer section.connect:before { content: 'Connect'; }
+footer section.about:before { content: 'About Us'; }
+
+
+
+

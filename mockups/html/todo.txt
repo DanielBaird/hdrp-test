@@ -1,0 +1,55 @@
+
+X make student switch work
+
+X move teaching list to new tab
+X move numbers to overview page
+  - add advisor mentor status
+
+- make connect-with-me open a drawer with the various links
+  - email
+  - phone/s
+  - location/s
+  - vCard
+
+X fix header heights
+- move collab map to overview
+- add jcu.me copyable link to list of links
+- research areas list
+- think about wording for "recent pubs" lists
+- fix heading for chapters/articles
+
+- stats
+  X under bio
+  - review list from gdoc "key highlight and metrics"
+  X include "percent completion" for students?
+
+- consider subject codes in teaching list, could go away or move to end
+- work out a layout for the info sentences
+X add name to top of every tab
+- avatars for project supervisors
+
+- primary short links above other shortlinks:
+  X orcid id
+  X supervisor status / student degree candidature
+  X join my research team
+  X link to this profile
+
+X tab list:
+  X overview / honours / publications and datasets / funding / supervision / experience & teaching
+- Experience tab
+  X move teaching there
+  - then Experience list
+
+- project section:
+  - allow a link with curated link text
+  - project title
+  - project completion date
+  - project description
+  - project supervisors (avatars?)
+
+- Overview tab
+  X name stuff
+  X project (for students)
+  X bio
+  X stats
+  - interests
