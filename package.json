@@ -1,0 +1,14 @@
+{
+  "name": "hdrp-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {},
+  "scripts": {
+    "start": "cd server && serve & cd client && npm start",
+    "server": "cd server && serve",
+    "client": "cd client && npm start"
+  },
+  "devDependencies": {
+    "serve": "^6.0.2"
+  }
+}

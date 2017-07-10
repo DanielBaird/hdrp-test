@@ -40,141 +40,138 @@ class App extends Component {
   <Header />
   <Navbar />
 
-  <Avatar url={this.state.profile.avatar_url} />
+  <div className="container">
+    <div className="row">
 
-<div className="jcu-content"><div className="content">
+      {/* left column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+      <div className="col-sm-3">
 
-  <div className="tersecol">
-    {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-    <section className="avatar">
-        <img src="https://research.jcu.edu.au/portfolio/peter.leggat/photo/profile-x2/2cf74decddb1be4dddb4a3019bf7fd76" />
-    </section>
-    {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-    <section className="primary_ids">
-      <ul>
-        <li>
-          <a className="orcid" href="#">0000-0123-4567-8901</a>
-        </li><li>
-          <a className="advisor staffonly" href="#"><span className="icon-asterisk" aria-hidden="true"></span> Advisor Mentor</a>
-        </li><li>
-          <a className="connect" href="#"><span className="icon-asterisk" aria-hidden="true"></span> Connect with me</a>
-        </li><li>
-          <a className="join" href="#"><span className="icon-friends" aria-hidden="true"></span> Join my research team</a>
-        </li>
-      </ul>
-    </section>
-    {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-    <section className="external_ids">
-      <ul>
-        <li><a className="twitter" href="#">@Leggat_Peter</a></li>
-        <li><a className="website" href="#">example.edu.au</a></li>
-        <li><a className="academia" href="#">academia.edu</a></li>
-        <li><a className="researchgate" href="#">ResearchGate</a></li>
-        <li><a className="conversation" href="#">The Conversation</a></li>
-        <li><a className="scholar" href="#">Google Scholar</a></li>
-        <li><a className="scopus" href="#">Scopus</a></li>
-      </ul>
-    </section>
-    {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-  </div>
-  {/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */}
-  {/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */}
-  {/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */}
-  <div className="detailcol">
-    {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-    <nav className="infonav">
-        <ul>
-            <li className="current"><a href="#overview">Overview</a></li>
-            <li><a href="#honours">Honours</a></li>
-            <li><a href="#works">Works</a></li>
-            <li className="staffonly"><a href="#funding">Funding</a></li>
-            <li className="staffonly"><a href="#supervision">Supervision</a></li>
-            <li><a href="#experience">Experience<br />&amp; Teaching</a></li>
-        </ul>
-    </nav>
-    {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-    <div className="tab overview">
-      <section className="name-assoc">
-          <h1><span className="staffonly">Professor</span>Peter Leggatt</h1>
-          <p className="staffonly">
-              AM, BMedSc MB BS <i>Qld</i>, MMedEd <i>Dundee</i>, 
-              MPH MHSc(AvMed) <i>Otago</i>, PhD <i>SAust</i>, 
-              DrPH <i>JCU</i>, MD <i>Qld</i>, FAFPHM, FFPH <i>RCP(UK)</i>, 
-              FPHAA, FACTM, FACAsM, FFTM FFEWM <i>ACTM</i>, 
-              FFTM <i>RCPSG</i>, FACRRM, FISTM, FSIA, FACE, FAICD, 
-              FRAS, FRGS, Hon.FFPM <i>RCP(UK)</i>, Hon.FACTM, 
-              Hon.FFTM <i>ACTM</i>, WSO-CSE/CSM/CSS(OSH)/CSSD, 
-              ChOHSP, MRO
-          </p>
+        <Avatar url={this.state.profile.avatar_url} />
+
+        <section className="primary_ids">
           <ul>
-              <li><span className="staffonly">Professor</span><span className="bothonly"> and </span><span className="studentonly">Candidate for Doctor of Philosophy</span></li>
-              <li><a href="#">College of Public Health, Medical &amp; Vet Sciences</a></li>
-              <li><a href="#">Anton Breinl Research Centre for Health Systems Strengthening</a></li>
-          </ul>        
-          <ul className="blobs">
-              <li>Public Health and Health Sciences</li>
-              <li>Clinical Sciences</li>
-          </ul>        
-      </section>
-      {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-      <section className="project studentonly">
-        <b>Using regional geographic scale substitution to value coastal wildlife tourism: implications for stakeholders, conservation and management</b>
-        <br />
-        D'Lima C, Welters R, Hamann M and Marsh H
-        <p className="shorten">
-          Professor Leggat graduated in medical science and medicine from the University of Queensland. He undertook postgraduate studies at various universities, including Mahidol University, the University of Dundee and the University of Otago, before completing doctorates at the University of South Australia and James Cook University and a higher doctorate at the University of Queensland. He has also specialised in General Practice, Public Health Medicine and Aerospace Medicine. As part of a Fulbright Scholarship, he completed the Primary Care Faculty Development Fellowship Program at Michigan State University. A current Fulbright Ambassador, his research encompasses a broad range of topics including occupational health issues for health care workers, public health aspects of disasters, and health and safety concerns for travellers. He has published  >500 journal papers (>4000 citations; h-index=31; i10-index=119), and >90 chapters, as well as >35 books, directories and proceedings. His most recently published textbook is Essential Travel Medicine (Wiley Blackwell, Oxford, UK, 2015). He has presented >350 papers at national and international conferences. 
-        </p>
-      </section>
-      {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-      <section className="bio shorten staffonly">
+            <li>
+              <a className="orcid" href="#">0000-0123-4567-8901</a>
+            </li><li>
+              <a className="advisor staffonly" href="#"><span className="icon-asterisk" aria-hidden="true"></span> Advisor Mentor</a>
+            </li><li>
+              <a className="connect" href="#"><span className="icon-asterisk" aria-hidden="true"></span> Connect with me</a>
+            </li><li>
+              <a className="join" href="#"><span className="icon-friends" aria-hidden="true"></span> Join my research team</a>
+            </li>
+          </ul>
+        </section>
 
-        <p>Professor Peter A. Leggat, AM, is Professor and Deputy Dean in the <a href="https://www.jcu.edu.au/college-of-public-health-medical-and-veterinary-sciences" target="_blank">College of Public Health, Medical and Veterinary Sciences</a>, Division of Tropical Health and Medicine, <a href="http://www.jcu.edu.au" target="_blank">James Cook University</a> (JCU), Australia. He has a strong interest in health workforce development in public health and tropical medicine, but also in related areas such as aerospace and travel medicine. He also founded the <a href="http://www.pitt.edu/~super1/collections/collection51.htm" target="_blank">Supercourse Travel Medicine Course</a> with eight lectures. He has consulted with various organisations, including the <a href="http://www.defence.gov.au/" target="_blank">Australian Defence Force</a>, the <a href="https://www.tga.gov.au/" target="_blank">Therapeutic Goods Administration</a> (Australia) and the <a href="http://who.int/en/" target="_blank">World Health Organization</a>.&nbsp;</p>
-        <p>Professor Leggat graduated in medical science and medicine from the <a href="http://www.uq.edu.au/" target="_blank">University of Queensland</a>. He undertook postgraduate studies at various universities, including <a href="http://www.mahidol.ac.th/en/" target="_blank">Mahidol University</a>, the <a href="http://www.dundee.ac.uk" target="_blank">University of Dundee</a> and the <a href="http://www.otago.ac.nz" target="_blank">University of Otago</a>, before completing doctorates at the <a href="http://www.unisa.edu.au/" target="_blank">University of South Australia</a> and <a href="https://www.jcu.edu.au/" target="_blank">James Cook University</a> and a higher doctorate at the <a href="http://uq.edu.au/" target="_blank">University of Queensland</a>. He has also specialised in <a href="http://www.racgp.org.au" target="_blank">General Practice</a>, <a href="https://members.racp.edu.au/page/racp-faculties/australasian-faculty-of-public-health-medicine/" target="_blank">Public Health Medicine</a> and <a href="http://www.aerospacemedicine.org.au" target="_blank">Aerospace Medicine</a>. As part of a <a href="http://fulbright.com.au/" target="_blank">Fulbright Scholarship</a>, he completed the Primary Care Faculty Development Fellowship Program at <a href="http://www.msu.edu/" target="_blank">Michigan State University</a>. A current Fulbright Ambassador, his research encompasses a broad range of topics including occupational health issues for health care workers, public health aspects of disasters, and health and safety concerns for travellers. He has published&nbsp; &gt;500 journal papers (<a href="http://scholar.google.com/citations?user=7XgY0qcAAAAJ&amp;hl=en" target="_blank">&gt;4000 citations; <em>h-</em>index=31; i10-index=119</a>), and &gt;90 chapters, as well as &gt;35 books, directories and proceedings. His most recently published textbook is <a href="http://onlinelibrary.wiley.com/book/10.1002/9781118597361" target="_blank"><em>Essential Travel Medicine</em></a> (Wiley Blackwell, Oxford, UK, 2015)<em>. </em>He has presented &gt;350 papers at national and international conferences.&nbsp;</p>
-        <p>Professor Leggat holds a number of professional and other Board appointments. These include the <a href="http://www-public.jcu.edu.au/public/groups/everyone/documents/membership/jcuprd1_062778.pdf" target="_blank">JCU Council,</a> <a title="World Safety Organization" href="http://www.worldsafety.org" target="_blank">World Safety Organization</a> (formerly Director-General, 1997-99), <a title="International Society of Travel Medicine" href="http://www.istm.org" target="_blank">International Society of Travel Medicine </a>(Secretary-Treasurer), <a title="The Australasian College of Aerospace Medicine" href="http://www.aerospacemedicine.org.au" target="_blank">The Australasian College of Aerospace Medicine </a>(Dean of Education), <a title="The Australasian College of Tropical Medicine" href="http://www.tropmed.org" target="_blank">The Australasian College of Tropical Medicine</a> (ACTM) (President), and the <a href="http://www.travelmedicine.org.au/" target="_blank">Faculty of Travel Medicine</a>, (Dean), ACTM. He was elected a Fellow of the <a href="http://www.companydirectors.com.au/" target="_blank">Australian Institute of Company Directors</a> in 1991 and has been the recipient of numerous awards and honours (selected Awards and honours from the past 10 years are given under Honours), including admission as a <a href="https://www.gg.gov.au/sites/default/files/files/honours/qb/qb2013/Gazette%20O%20of%20A%281%29.pdf" target="_blank">Member of the Order of Australia</a> in 2013 and an <a href="https://www.legislation.gov.au/Details/C2016G01262" target="_blank">Commander of the Order of St John</a> in 2016.</p>
+        <section className="external_ids">
+          <ul>
+            <li><a className="twitter" href="#">@Leggat_Peter</a></li>
+            <li><a className="website" href="#">example.edu.au</a></li>
+            <li><a className="academia" href="#">academia.edu</a></li>
+            <li><a className="researchgate" href="#">ResearchGate</a></li>
+            <li><a className="conversation" href="#">The Conversation</a></li>
+            <li><a className="scholar" href="#">Google Scholar</a></li>
+            <li><a className="scopus" href="#">Scopus</a></li>
+          </ul>
+        </section>
 
-      </section>
-      {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-      <section className="metrics">
-        <ul>
-          <li className="staffonly"><a className="" href="#"><span className="metric pubs">246</span> publications</a></li>
-          <li className="staffonly"><a className="" href="#"><span className="metric">8</span> HDR students</a></li>
-          <li className="staffonly"><a className="" href="#"><span className="metric money">248k</span> grant funding</a></li>
-          <li className="studentonly"><a className="" href="#"><span className="metric completion">◕ 75%</span> complete</a></li>
-        </ul>
-      </section>
-      {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+      </div>
+      {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
 
-    </div>{/* /.overview */}
-    <div className="tab honours">
-      {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
-      <section className="shortname">
-          <h1><span className="staffonly">Professor </span>Peter Leggatt</h1>
-          <span className="quals staffonly">
-              AM, BMedSc MB BS <i>Qld</i>, MMedEd <i>Dundee</i>, MPH MHSc(AvMed) <i>Otago</i>, PhD <i>SAust</i>, DrPH <i>JCU</i>, MD <i>Qld</i>, FAFPHM, FFPH <i>RCP(UK)</i>, FPHAA, FACTM, FACAsM, FFTM FFEWM <i>ACTM</i>, FFTM <i>RCPSG</i>, FACRRM, FISTM, FSIA, FACE, FAICD, FRAS, FRGS, Hon.FFPM <i>RCP(UK)</i>, Hon.FACTM, Hon.FFTM <i>ACTM</i>, WSO-CSE/CSM/CSS(OSH)/CSSD, ChOHSP, MRO
-          </span>
-      </section>
-      <section className="awards">
-        <ul>
-          <li className="honour even">
-            2016 - Commander of the Order of St John, Commonwealth of Australia Gazette No. C2016G01262
-          </li>
-          <li className="honour odd">
-            2016 - Australia Day Ambassador, Queensland, National Australia Day Council
-          </li>
-          <li className="honour even">
-            2015 - Australia Day Ambassador, Queensland, National Australia Day Council
-          </li>
-          <li className="honour odd">
-            2014 - Australia Day Ambassador, Queensland, National Australia Day Council
-          </li>
-          <li className="honour even">
-            2014 - Glenn E. Hudson International Award, World Safety Organization
-          </li>
-          <li className="honour odd">
-            2013 - Member of the Order of Australia, Commonwealth of Australia Gazette No. C2013G00848
-          </li>
-        </ul>
-      </section>
+      <div className="detailcol col-sm-8">
+        {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+        <nav className="infonav">
+            <ul>
+                <li className="current"><a href="#overview">Overview</a></li>
+                <li><a href="#honours">Honours</a></li>
+                <li><a href="#works">Works</a></li>
+                <li className="staffonly"><a href="#funding">Funding</a></li>
+                <li className="staffonly"><a href="#supervision">Supervision</a></li>
+                <li><a href="#experience">Experience<br />&amp; Teaching</a></li>
+            </ul>
+        </nav>
+        {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+        <div className="tab overview">
+          <section className="name-assoc">
+              <h1><span className="staffonly">Professor</span>Peter Leggatt</h1>
+              <p className="staffonly">
+                  AM, BMedSc MB BS <i>Qld</i>, MMedEd <i>Dundee</i>, 
+                  MPH MHSc(AvMed) <i>Otago</i>, PhD <i>SAust</i>, 
+                  DrPH <i>JCU</i>, MD <i>Qld</i>, FAFPHM, FFPH <i>RCP(UK)</i>, 
+                  FPHAA, FACTM, FACAsM, FFTM FFEWM <i>ACTM</i>, 
+                  FFTM <i>RCPSG</i>, FACRRM, FISTM, FSIA, FACE, FAICD, 
+                  FRAS, FRGS, Hon.FFPM <i>RCP(UK)</i>, Hon.FACTM, 
+                  Hon.FFTM <i>ACTM</i>, WSO-CSE/CSM/CSS(OSH)/CSSD, 
+                  ChOHSP, MRO
+              </p>
+              <ul>
+                  <li><span className="staffonly">Professor</span><span className="bothonly"> and </span><span className="studentonly">Candidate for Doctor of Philosophy</span></li>
+                  <li><a href="#">College of Public Health, Medical &amp; Vet Sciences</a></li>
+                  <li><a href="#">Anton Breinl Research Centre for Health Systems Strengthening</a></li>
+              </ul>        
+              <ul className="blobs">
+                  <li>Public Health and Health Sciences</li>
+                  <li>Clinical Sciences</li>
+              </ul>        
+          </section>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+          <section className="project studentonly">
+            <b>Using regional geographic scale substitution to value coastal wildlife tourism: implications for stakeholders, conservation and management</b>
+            <br />
+            D'Lima C, Welters R, Hamann M and Marsh H
+            <p className="shorten">
+              Professor Leggat graduated in medical science and medicine from the University of Queensland. He undertook postgraduate studies at various universities, including Mahidol University, the University of Dundee and the University of Otago, before completing doctorates at the University of South Australia and James Cook University and a higher doctorate at the University of Queensland. He has also specialised in General Practice, Public Health Medicine and Aerospace Medicine. As part of a Fulbright Scholarship, he completed the Primary Care Faculty Development Fellowship Program at Michigan State University. A current Fulbright Ambassador, his research encompasses a broad range of topics including occupational health issues for health care workers, public health aspects of disasters, and health and safety concerns for travellers. He has published  >500 journal papers (>4000 citations; h-index=31; i10-index=119), and >90 chapters, as well as >35 books, directories and proceedings. His most recently published textbook is Essential Travel Medicine (Wiley Blackwell, Oxford, UK, 2015). He has presented >350 papers at national and international conferences. 
+            </p>
+          </section>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+          <section className="bio shorten staffonly">
+
+            <p>Professor Peter A. Leggat, AM, is Professor and Deputy Dean in the <a href="https://www.jcu.edu.au/college-of-public-health-medical-and-veterinary-sciences" target="_blank">College of Public Health, Medical and Veterinary Sciences</a>, Division of Tropical Health and Medicine, <a href="http://www.jcu.edu.au" target="_blank">James Cook University</a> (JCU), Australia. He has a strong interest in health workforce development in public health and tropical medicine, but also in related areas such as aerospace and travel medicine. He also founded the <a href="http://www.pitt.edu/~super1/collections/collection51.htm" target="_blank">Supercourse Travel Medicine Course</a> with eight lectures. He has consulted with various organisations, including the <a href="http://www.defence.gov.au/" target="_blank">Australian Defence Force</a>, the <a href="https://www.tga.gov.au/" target="_blank">Therapeutic Goods Administration</a> (Australia) and the <a href="http://who.int/en/" target="_blank">World Health Organization</a>.&nbsp;</p>
+            <p>Professor Leggat graduated in medical science and medicine from the <a href="http://www.uq.edu.au/" target="_blank">University of Queensland</a>. He undertook postgraduate studies at various universities, including <a href="http://www.mahidol.ac.th/en/" target="_blank">Mahidol University</a>, the <a href="http://www.dundee.ac.uk" target="_blank">University of Dundee</a> and the <a href="http://www.otago.ac.nz" target="_blank">University of Otago</a>, before completing doctorates at the <a href="http://www.unisa.edu.au/" target="_blank">University of South Australia</a> and <a href="https://www.jcu.edu.au/" target="_blank">James Cook University</a> and a higher doctorate at the <a href="http://uq.edu.au/" target="_blank">University of Queensland</a>. He has also specialised in <a href="http://www.racgp.org.au" target="_blank">General Practice</a>, <a href="https://members.racp.edu.au/page/racp-faculties/australasian-faculty-of-public-health-medicine/" target="_blank">Public Health Medicine</a> and <a href="http://www.aerospacemedicine.org.au" target="_blank">Aerospace Medicine</a>. As part of a <a href="http://fulbright.com.au/" target="_blank">Fulbright Scholarship</a>, he completed the Primary Care Faculty Development Fellowship Program at <a href="http://www.msu.edu/" target="_blank">Michigan State University</a>. A current Fulbright Ambassador, his research encompasses a broad range of topics including occupational health issues for health care workers, public health aspects of disasters, and health and safety concerns for travellers. He has published&nbsp; &gt;500 journal papers (<a href="http://scholar.google.com/citations?user=7XgY0qcAAAAJ&amp;hl=en" target="_blank">&gt;4000 citations; <em>h-</em>index=31; i10-index=119</a>), and &gt;90 chapters, as well as &gt;35 books, directories and proceedings. His most recently published textbook is <a href="http://onlinelibrary.wiley.com/book/10.1002/9781118597361" target="_blank"><em>Essential Travel Medicine</em></a> (Wiley Blackwell, Oxford, UK, 2015)<em>. </em>He has presented &gt;350 papers at national and international conferences.&nbsp;</p>
+            <p>Professor Leggat holds a number of professional and other Board appointments. These include the <a href="http://www-public.jcu.edu.au/public/groups/everyone/documents/membership/jcuprd1_062778.pdf" target="_blank">JCU Council,</a> <a title="World Safety Organization" href="http://www.worldsafety.org" target="_blank">World Safety Organization</a> (formerly Director-General, 1997-99), <a title="International Society of Travel Medicine" href="http://www.istm.org" target="_blank">International Society of Travel Medicine </a>(Secretary-Treasurer), <a title="The Australasian College of Aerospace Medicine" href="http://www.aerospacemedicine.org.au" target="_blank">The Australasian College of Aerospace Medicine </a>(Dean of Education), <a title="The Australasian College of Tropical Medicine" href="http://www.tropmed.org" target="_blank">The Australasian College of Tropical Medicine</a> (ACTM) (President), and the <a href="http://www.travelmedicine.org.au/" target="_blank">Faculty of Travel Medicine</a>, (Dean), ACTM. He was elected a Fellow of the <a href="http://www.companydirectors.com.au/" target="_blank">Australian Institute of Company Directors</a> in 1991 and has been the recipient of numerous awards and honours (selected Awards and honours from the past 10 years are given under Honours), including admission as a <a href="https://www.gg.gov.au/sites/default/files/files/honours/qb/qb2013/Gazette%20O%20of%20A%281%29.pdf" target="_blank">Member of the Order of Australia</a> in 2013 and an <a href="https://www.legislation.gov.au/Details/C2016G01262" target="_blank">Commander of the Order of St John</a> in 2016.</p>
+
+          </section>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+          <section className="metrics">
+            <ul>
+              <li className="staffonly"><a className="" href="#"><span className="metric pubs">246</span> publications</a></li>
+              <li className="staffonly"><a className="" href="#"><span className="metric">8</span> HDR students</a></li>
+              <li className="staffonly"><a className="" href="#"><span className="metric money">248k</span> grant funding</a></li>
+              <li className="studentonly"><a className="" href="#"><span className="metric completion">◕ 75%</span> complete</a></li>
+            </ul>
+          </section>
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+
+        </div>{/* /.overview */}
+        <div className="tab honours">
+          {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
+          <section className="shortname">
+              <h1><span className="staffonly">Professor </span>Peter Leggatt</h1>
+              <span className="quals staffonly">
+                  AM, BMedSc MB BS <i>Qld</i>, MMedEd <i>Dundee</i>, MPH MHSc(AvMed) <i>Otago</i>, PhD <i>SAust</i>, DrPH <i>JCU</i>, MD <i>Qld</i>, FAFPHM, FFPH <i>RCP(UK)</i>, FPHAA, FACTM, FACAsM, FFTM FFEWM <i>ACTM</i>, FFTM <i>RCPSG</i>, FACRRM, FISTM, FSIA, FACE, FAICD, FRAS, FRGS, Hon.FFPM <i>RCP(UK)</i>, Hon.FACTM, Hon.FFTM <i>ACTM</i>, WSO-CSE/CSM/CSS(OSH)/CSSD, ChOHSP, MRO
+              </span>
+          </section>
+          <section className="awards">
+            <ul>
+              <li className="honour even">
+                2016 - Commander of the Order of St John, Commonwealth of Australia Gazette No. C2016G01262
+              </li>
+              <li className="honour odd">
+                2016 - Australia Day Ambassador, Queensland, National Australia Day Council
+              </li>
+              <li className="honour even">
+                2015 - Australia Day Ambassador, Queensland, National Australia Day Council
+              </li>
+              <li className="honour odd">
+                2014 - Australia Day Ambassador, Queensland, National Australia Day Council
+              </li>
+              <li className="honour even">
+                2014 - Glenn E. Hudson International Award, World Safety Organization
+              </li>
+              <li className="honour odd">
+                2013 - Member of the Order of Australia, Commonwealth of Australia Gazette No. C2013G00848
+              </li>
+            </ul>
+          </section>
     </div>{/* /.honours */}
 {/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */}
 {/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */}

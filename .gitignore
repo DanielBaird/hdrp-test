@@ -1,3 +1,6 @@
+# why is this not standard in every ignore file
+.DS_Store
+
 # Logs
 logs
 *.log
