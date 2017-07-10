@@ -16,6 +16,16 @@ dependency ([`serve`](https://github.com/zeit/serve)), then
 start up both the static file "server" side, and the dev server
 for the client side.
 
+Once your deps are installed, you can just
+
+```bash
+npm start
+```
+
+from the project root to run the two servers again.  Note that if
+you run `npm start` from the `client` dir, it'll run the client
+dev server but not the backend server.
+
 ## Directories
 
 |directory           | What's in it
