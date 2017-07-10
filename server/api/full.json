@@ -6,6 +6,7 @@
 
     "data": {
         "_email": "david.example@jcu.edu.au",
+        "avatar_url": "https://placecage.com/300/300",
         "campus": "Townsville",
         "email_id": "david.example",
         "employee_id": 1234,
