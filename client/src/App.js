@@ -6,11 +6,13 @@ import './vendor/jcu-framework/css/jcu.css'
 
 import Avatar from './components/avatar/Avatar.js'
 import PresentationSwitcher from './components/meta/PresentationSwitcher.js'
+import Header from './components/layout/Header.js'
+import Navbar from './components/layout/Navbar.js'
 
 class App extends Component {
   // ----------------------------------------------------------------
   state = {
-    avatarUrl: ''
+    profile: {}
   }
   // ----------------------------------------------------------------
   constructor() {
@@ -26,7 +28,7 @@ class App extends Component {
     .then(json => {
       // got json here..
       console.log(json.meta, json.data)
-      this.setState(json.data)
+      this.setState({profile: json.data})
     });
   }
   // ----------------------------------------------------------------
@@ -34,25 +36,11 @@ class App extends Component {
     console.log('rendering')
     return (
 <div>
-    <PresentationSwitcher />
-<header>
-    <a className="text-inverse jcubrand" href="#">
-      <img className="jcu-footer__brand-img" src="https://web.jcu.io/dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Australia logo" />Research Portfolio
-    </a>
-    <input value="" autoComplete="off" className="search-bar-input" placeholder="Search for topics or researchers" name="q" type="text" />
-    or
-    <a className="btn btn-primary">Explore</a>
+  <PresentationSwitcher />
+  <Header />
+  <Navbar />
 
-    <a className="login" href="#">Log in</a>
-</header>
-<nav className="pagenav">
-    <ul>
-        <li>nav link 1</li>
-        <li className="current">nav link 2</li>
-        <li>nav link 3</li>
-        <li>nav link 4</li>
-    </ul>
-</nav>
+  <Avatar url={this.state.profile.avatar_url} />
 
 <div className="jcu-content"><div className="content">
 
