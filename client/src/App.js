@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
-import './App.css'
+
+// import './App.css'
+import './vendor/jcu-framework/css/jcu.css'
 
 import Avatar from './components/avatar/Avatar.js'
+import PresentationSwitcher from './components/meta/PresentationSwitcher.js'
 
 class App extends Component {
   // ----------------------------------------------------------------
@@ -16,7 +19,6 @@ class App extends Component {
   }
   // ----------------------------------------------------------------
   getData() {
-    console.log("gettin data");
     return fetch('/api/test', {
      accept: 'application/json',
     })
@@ -35,11 +37,7 @@ class App extends Component {
 <div>
 <header>
 
-    <div className="switcher">
-      <button id="btn-student">student</button>
-      <button id="btn-staff">staff</button>
-      <button id="btn-both">both</button>
-    </div>
+    <PresentationSwitcher />
 
     <a className="text-inverse jcubrand" href="#"><img className="jcu-footer__brand-img" src="https://web.jcu.io/dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Australia logo" />Research Portfolio
 </a>
