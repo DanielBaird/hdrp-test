@@ -1,0 +1,137 @@
+{
+    "meta": {
+        "whatever": "goes here",
+        "error": null
+    },
+
+    "data": {
+        "_email": "david.example@jcu.edu.au",
+        "campus": "Townsville",
+        "email_id": "david.example",
+        "employee_id": 1234,
+        "eprints_id": "1234567890",
+        "faculty": "Division of Tropical Environments & Societies",
+        "faculty_code": 6,
+        "first_name": "David",
+        "login_id": "jc123456",
+        "position": "Senior Lecturer",
+        "school": "College of Business, Law & Governance",
+        "surname": "Example",
+        "telephone": "+61 7 4781 99999",
+        "salutation": "Dr",
+        "supervision_level": "Primary Advisor (P)",
+        "is_adjunct": false,
+
+        "external_ids": {
+            "Twitter": "davidjb",
+            "Google_Scholar": "x"
+        },
+
+        "biography": "This is my <strong>HTML</strong> biography",
+
+        "school_association": "221000",
+
+        "centre_association": "cssp",
+
+        "location": {
+            "room_id": "17.144",
+            "room_number": "144",
+            "building_id": "17",
+            "building_number": "017",
+            "building_name": "BuyMore/Castle"
+        },
+
+        "keywords": {
+            "A": 1,
+            "random": 6,
+            "collection": 10
+        },
+
+        "publications": [
+            {
+                "type": "C",
+                "authors": "Example DJ",
+                "content": "(2012) <a href=\"https://researchonline.jcu.edu.au/\"><em>Test publication</em></a> Test Review, 64 (4). pp. 1209-1241"
+            }
+        ],
+
+        "research_projects": [
+            {
+                "admin_organisation": "Example University",
+                "application_id": 12345,
+                "associates": "Example City Council",
+                "chief_investigators": "<a href=\"http://www.root/david.example\">David Example</a>",
+                "count": null,
+                "fund_name": "Project Grant",
+                "funding": 1234.0,
+                "keywords": "Example; test; keyword",
+                "orgus": "Medicine & Dentistry, <i>The University of Examples</i>",
+                "partners": "Smithford and sons",
+                "project_title": "Example project title",
+                "start_year": 2012,
+                "summary": "An example summary",
+                "years_remaining": "over 5 years"
+            }
+        ],
+
+        "uspervision": [
+            {
+                "record_id": 1,
+                "status": "Completed",
+                "research_type": "PhD",
+                "type": "Principal Supervisor",
+                "thesis": "An example thesis",
+                "year_completed": "2012"
+            }
+        ],
+
+        "teaching_subjects": [
+            {
+                "campus": "Tsv",
+                "level": 3,
+                "subject": "<a href=\"https://secure.jcu.edu.au/app/studyfinder/?subject=LA3106\">LA3106</a>: Company and Partnership Law"
+            }
+        ],
+
+        "interests": [
+            { "name": "Test", "type": "Research" },
+            { "name": "Test", "type": "Teaching" }
+        ],
+
+        "experience": [
+            {
+                "start_year": 2012,
+                "end_year": 2013,
+                "position": "Test Position",
+                "institution": "JCU",
+                "location": "Townsville"
+            },{
+                "start_year": 2010,
+                "end_year": 2012,
+                "position": "Test Position Old",
+                "institution": "JCU",
+                "location": "Cairns"
+            }
+        ],
+
+        "honours": [
+            {
+                "start_year": 2012,
+                "end_year": 2013,
+                "_type": "Award",
+                "title": "Test Award"
+            },{
+                "start_year": 2011,
+                "end_year": 2012,
+                "_type": "Other",
+                "title": "Top Award"
+            }            
+        ]
+
+    }
+}
+
+
+
+
+

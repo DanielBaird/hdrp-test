@@ -19,7 +19,7 @@ class App extends Component {
   }
   // ----------------------------------------------------------------
   getData() {
-    return fetch('/api/test', {
+    return fetch('/api/full.json', {
      accept: 'application/json',
     })
     .then(response => response.json())
@@ -33,14 +33,12 @@ class App extends Component {
   render() {
     console.log('rendering')
     return (
-
 <div>
-<header>
-
     <PresentationSwitcher />
-
-    <a className="text-inverse jcubrand" href="#"><img className="jcu-footer__brand-img" src="https://web.jcu.io/dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Australia logo" />Research Portfolio
-</a>
+<header>
+    <a className="text-inverse jcubrand" href="#">
+      <img className="jcu-footer__brand-img" src="https://web.jcu.io/dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Australia logo" />Research Portfolio
+    </a>
     <input value="" autoComplete="off" className="search-bar-input" placeholder="Search for topics or researchers" name="q" type="text" />
     or
     <a className="btn btn-primary">Explore</a>
