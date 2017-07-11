@@ -5,43 +5,55 @@
     },
 
     "data": {
-        "_email": "david.example@jcu.edu.au",
+        "orcid": "0000-0002-0252-0320",
+        "email": "david.example@jcu.edu.au",
         "avatar_url": "https://placecage.com/300/300",
         "avatar_url": "https://research.jcu.edu.au/portfolio/peter.leggat/photo/profile-x2/2cf74decddb1be4dddb4a3019bf7fd76",
-        "campus": "Townsville",
         "email_id": "david.example",
-        "employee_id": 1234,
-        "eprints_id": "1234567890",
-        "faculty": "Division of Tropical Environments & Societies",
-        "faculty_code": 6,
+        "eprints_url": "https://researchonline.jcu.edu.au/view/jcu/EDC7E03B41C8593B67CB1980126251DD.html",
         "first_name": "David",
         "login_id": "jc123456",
-        "position": "Senior Lecturer",
-        "school": "College of Business, Law & Governance",
         "surname": "Example",
-        "telephone": "+61 7 4781 99999",
-        "salutation": "Dr",
+        "telephone": [
+            "+61 7 4781 99999"
+        ],
+        "salutation": "Associate Professor",
+        "suffix": "AM, PhD <i>JCU</i>, MBA, SSC, BSC M<sup>c</sup>Donalds Ball Pit",
+        "supervision_level": null,
         "supervision_level": "Primary Advisor (P)",
         "is_adjunct": false,
 
-        "external_ids": {
-            "Twitter": "davidjb",
-            "Google_Scholar": "x"
-        },
-
         "biography": "This is my <strong>HTML</strong> biography",
 
+        "campus": "Townsville",
+        "position": "Senior Lecturer",
+        "faculty_code": 6,
+        "faculty": "Division of Tropical Environments & Societies",
+        "school": "College of Business, Law & Governance",
         "school_association": "221000",
-
         "centre_association": "cssp",
 
-        "location": {
-            "room_id": "17.144",
-            "room_number": "144",
-            "building_id": "17",
-            "building_number": "017",
-            "building_name": "BuyMore/Castle"
-        },
+        "external_ids": [
+            {
+                "type": "Twitter",
+                "text": "@davidjb_",
+                "url": "https://twitter.com/davidjb_"
+            },
+            {
+                "type": "Google Scholar",
+                "text": "David X Example",
+                "url": "https://googles.scholarzz.abc.xyz/DXE"
+            }
+        ],
+
+
+        "locations": [
+            {
+                "location": "17.144",
+                "region": "Townsville",
+                "map_url": "https://maps.jcu.edu.au/campus/townsville/?location=102"
+            }
+        ],
 
         "keywords": {
             "A": 1,
@@ -51,8 +63,9 @@
 
         "publications": [
             {
-                "type": "C",
+                "type": "Book Chapter",
                 "authors": "Example DJ",
+                "year": 2012,
                 "content": "(2012) <a href=\"https://researchonline.jcu.edu.au/\"><em>Test publication</em></a> Test Review, 64 (4). pp. 1209-1241"
             }
         ],
@@ -76,22 +89,24 @@
             }
         ],
 
-        "uspervision": [
+        "supervision": [
             {
                 "record_id": 1,
                 "status": "Completed",
                 "research_type": "PhD",
                 "type": "Principal Supervisor",
                 "thesis": "An example thesis",
-                "year_completed": "2012"
+                "year_completed": 2012
             }
         ],
 
         "teaching_subjects": [
             {
-                "campus": "Tsv",
+                "campus": "Townsville",
                 "level": 3,
-                "subject": "<a href=\"https://secure.jcu.edu.au/app/studyfinder/?subject=LA3106\">LA3106</a>: Company and Partnership Law"
+                "code": "LA3106",
+                "name": "Company and Partnership Law",
+                "url": "https://secure.jcu.edu.au/app/studyfinder/?subject=LA3106"
             }
         ],
 
@@ -119,14 +134,18 @@
         "honours": [
             {
                 "start_year": 2012,
-                "end_year": 2013,
-                "_type": "Award",
+                "type": "Award",
                 "title": "Test Award"
+            },{
+                "start_year": 1995,
+                "end_year": 2007,
+                "type": "Membership",
+                "title": "Cheese of the month club"
             },{
                 "start_year": 2011,
                 "end_year": 2012,
-                "_type": "Other",
-                "title": "Top Award"
+                "type": "Fellowship",
+                "title": "Top Jobbie, there, fellow"
             }            
         ]
 

@@ -30,7 +30,8 @@
 	font-size: inherit;
 }
 
-html {
+html, body {
+/*html {*/
 	font-family:
         -apple-system,       /* default macOS font for Safari/webkit */
         BlinkMacSystemFont,  /* default macOS font for Chrome/blink */

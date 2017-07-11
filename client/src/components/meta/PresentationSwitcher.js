@@ -2,6 +2,10 @@
 import React, { Component } from 'react'
 import './PresentationSwitcher.css'
 
+/**
+ * PresentationSwitcher adds a litte floating buttonbar that
+ * lets the viewer switch between different views.
+ */
 class PresentationSwitcher extends Component {
   render() {
     return (

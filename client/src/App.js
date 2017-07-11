@@ -4,10 +4,14 @@ import logo from './logo.svg'
 // import './App.css'
 import './vendor/jcu-framework/css/jcu.css'
 
-import Avatar from './components/avatar/Avatar.js'
 import PresentationSwitcher from './components/meta/PresentationSwitcher.js'
 import Header from './components/layout/Header.js'
 import Navbar from './components/layout/Navbar.js'
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+
+import Avatar from './components/avatar/Avatar.js'
+import ProfileLinks from './components/profile/ProfileLinks.js'
 
 class App extends Component {
   // ----------------------------------------------------------------
@@ -21,7 +25,7 @@ class App extends Component {
   }
   // ----------------------------------------------------------------
   getData() {
-    return fetch('/api/full.json', {
+    return fetch('/api/researcher.json', {
      accept: 'application/json',
     })
     .then(response => response.json())
@@ -47,32 +51,7 @@ class App extends Component {
       <div className="col-sm-3">
 
         <Avatar url={this.state.profile.avatar_url} />
-
-        <section className="primary_ids">
-          <ul>
-            <li>
-              <a className="orcid" href="#">0000-0123-4567-8901</a>
-            </li><li>
-              <a className="advisor staffonly" href="#"><span className="icon-asterisk" aria-hidden="true"></span> Advisor Mentor</a>
-            </li><li>
-              <a className="connect" href="#"><span className="icon-asterisk" aria-hidden="true"></span> Connect with me</a>
-            </li><li>
-              <a className="join" href="#"><span className="icon-friends" aria-hidden="true"></span> Join my research team</a>
-            </li>
-          </ul>
-        </section>
-
-        <section className="external_ids">
-          <ul>
-            <li><a className="twitter" href="#">@Leggat_Peter</a></li>
-            <li><a className="website" href="#">example.edu.au</a></li>
-            <li><a className="academia" href="#">academia.edu</a></li>
-            <li><a className="researchgate" href="#">ResearchGate</a></li>
-            <li><a className="conversation" href="#">The Conversation</a></li>
-            <li><a className="scholar" href="#">Google Scholar</a></li>
-            <li><a className="scopus" href="#">Scopus</a></li>
-          </ul>
-        </section>
+        <ProfileLinks profile={this.state.profile} />
 
       </div>
       {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
