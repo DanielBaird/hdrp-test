@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 
-import NamesAndTitles from '../profile/NameAndTitles.js'
-import ProjectAbstract from '../profile/ProjectAbstract.js'
-import Biography from '../profile/Biography.js'
-import MetricsSummary from '../profile/MetricsSummary.js'
+import NamesAndTitles from '../profile/NameAndTitles'
+import InterestBlobs from '../profile/InterestBlobs'
+import ProjectAbstract from '../profile/ProjectAbstract'
+import Biography from '../profile/Biography'
+import MetricsSummary from '../profile/MetricsSummary'
 
 /** 
  * OverviewSection is the stuff that goes into the Overview tab.
@@ -15,6 +16,7 @@ class OverviewSection extends Component {
       <div className="OverviewSection">
 
         <NamesAndTitles profile={pro} />
+        <InterestBlobs areas={pro.research_areas} />
         <ProjectAbstract profile={pro} />
         <Biography profile={pro} />
         <MetricsSummary profile={pro} />

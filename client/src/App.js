@@ -9,6 +9,7 @@ import Header from './components/layout/Header.js'
 import Navbar from './components/layout/Navbar.js'
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import 'react-tabs/style/react-tabs.css'
 
 import Avatar from './components/avatar/Avatar.js'
 import ProfileLinks from './components/profile/ProfileLinks.js'
@@ -60,22 +61,29 @@ class App extends Component {
       {/* right column ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
       <div className="detailcol col-sm-8 p-t-3 p-l-3">
 
-        <Tabs disabledTabClassName="disabled" selectedTabClassName="active">
+         <Tabs>
 
+        {/* 
+        This is what this would look like if we wanted to use Bootstrap styling:
+
+        <Tabs disabledTabClassName="disabled" selectedTabClassName="active">
           <TabList className="nav nav-pills m-b-3">
             <Tab className="nav-item nav-link">Overview</Tab>
-            <Tab className="nav-item nav-link">Honours</Tab>
-            <Tab className="nav-item nav-link">Works</Tab>
-            <Tab className="nav-item nav-link">Funding</Tab>
-            <Tab className="nav-item nav-link">Supervision</Tab>
-            <Tab className="nav-item nav-link">Experience<br />&amp; Teaching</Tab>
+        */}
+
+          <TabList className="react-tabs__tab-list m-b-3">
+            <Tab>Overview</Tab>
+            <Tab>Honours</Tab>
+            <Tab>Works</Tab>
+            <Tab>Funding</Tab>
+            <Tab>Supervision</Tab>
+            <Tab>Experience<br />&amp; Teaching</Tab>
           </TabList>
 
           <TabPanel>
             <OverviewSection profile={this.state.profile} />
           </TabPanel>
-          <TabPanel>
-
+          <TabPanel> 
 
 
 

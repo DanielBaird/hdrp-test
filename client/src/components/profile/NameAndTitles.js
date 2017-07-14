@@ -23,11 +23,6 @@ class NameAndTitles extends Component {
           <li><a href="#">College of Public Health, Medical &amp; Vet Sciences</a></li>
           <li><a href="#">Anton Breinl Research Centre for Health Systems Strengthening</a></li>
         </ul>        
-        <ul className="blobs">
-          <li>Public Health and Health Sciences</li>
-          <li>Clinical Sciences</li>
-        </ul>        
-
       </section>
     )
   }

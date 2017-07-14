@@ -14,7 +14,8 @@
 }
 .NameAndTitles .suffix {
   font-size: 85%;
-	color: var(--mid);
+  color: var(--mid);
+  margin-top: calc(-1 * var(--qpad));
 	padding: var(--qpad) 0;
 }
 .NameAndTitles li {
