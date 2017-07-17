@@ -19,6 +19,7 @@ import OverviewSection from './components/tabs/OverviewSection.js'
 class App extends Component {
   // ----------------------------------------------------------------
   state = {
+    profileType: 'researcher',
     profile: {}
   }
   // ----------------------------------------------------------------
@@ -28,15 +29,53 @@ class App extends Component {
   }
   // ----------------------------------------------------------------
   getData() {
-    return fetch('/api/researcher.json', {
-     accept: 'application/json',
+    const commonUrl = `/api/common.json`
+    const customUrl = `/api/${ this.state.profileType }.json`
+
+    // get the "common" data
+    this.fetchData(commonUrl)
+
+    // get the other data 5 seconds from now
+    setTimeout( ()=> { 
+      this.fetchData(customUrl) 
+    }, 5000)
+  }
+  // ----------------------------------------------------------------
+  /** 
+   * Fetch some profile data and merge it in to 
+   * the current profile
+   * @param (URL) - the url to get data from
+   */
+  fetchData(dataUrl) {
+    return fetch(dataUrl, {
+      accept: 'application/json',
     })
     .then(response => response.json())
     .then(json => {
-      // got json here..
-      console.log(json.meta, json.data)
-      this.setState({profile: json.data})
-    });
+      // when we get here, we finally have a json reply
+
+      this.setState((prevState, props) => {
+        // this callback in the only place we can rely 
+        // on prevState to be valid.
+        var newProfile = prevState.profile
+        for (let profileItem in json.data) {
+          newProfile[profileItem] = json.data[profileItem]
+        }
+        return { profile: newProfile }
+      }) // ..end of setState()
+
+    })
+  }
+  // ----------------------------------------------------------------
+  /** 
+   * Merges aspects of a profile into the current profile.  You should
+   * use this in a setState callback.
+   * @param newProfile - an object containing profile elements to 
+   *    update
+   * @returns a merged new profile
+   */
+  mergePofile(previousProfile, newProfile) {
+    
   }
   // ----------------------------------------------------------------
   render() {
