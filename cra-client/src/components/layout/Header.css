@@ -1,0 +1,21 @@
+.Header {
+  height: 110px;
+  margin: 0 auto;
+  max-width: 65rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header > * {
+  box-shadow: 0 0 5px 1px red;
+}
+
+.Header img.logo {
+  width: 160px;
+}
+
+.Header h1 {
+  font-size: inherit;
+  margin: 0 1rem;
+}

@@ -1,0 +1,23 @@
+.NameAndTitles {
+	--namesize: 4;
+}
+.NameAndTitles h1 {
+	font-size: 400%;
+	font-size: calc(100% * var(--namesize));
+	line-height: 1.2;
+  font-weight: 100;
+}
+.NameAndTitles h1 .sal {
+	display: block;
+	font-size: 25%;
+	font-size: calc(100% / var(--namesize));
+}
+.NameAndTitles .suffix {
+  font-size: 85%;
+  color: var(--mid);
+  margin-top: calc(-1 * var(--qpad));
+	padding: var(--qpad) 0;
+}
+.NameAndTitles li {
+	padding-bottom: 0.2em;
+}

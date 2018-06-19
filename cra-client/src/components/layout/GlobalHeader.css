@@ -1,0 +1,37 @@
+
+:root {
+  --global-header-height: 1.875rem;
+}
+
+body {
+  padding-top: var(--global-header-height);
+}
+
+.GlobalHeader {
+  z-index: 99;
+  height: 6rem;
+  height: var(--global-header-height);
+  line-height: var(--global-header-height);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  margin-top: calc(-1 * var(--global-header-height));
+}
+
+.GlobalHeader-inner {
+  max-width: 65.625rem;
+  font-size: 0.9em;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.GlobalHeader-inner > * {
+  margin-right: 1rem;
+}
+
+.GlobalHeader-inner svg {
+  vertical-align: middle;
+}

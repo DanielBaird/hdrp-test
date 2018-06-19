@@ -1,0 +1,42 @@
+.NavHeader .NavHeader-inner {
+  height: 110px;
+  margin: 0 auto;
+  max-width: 65rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavHeader img.logo {
+  width: 160px;
+  position: relative;
+  top: -6px;
+}
+
+/*.NavHeader-inner > * {
+  background-color: rgba(0,0,0, 0.2)
+}
+*/
+.NavHeader-inner header {
+  display: flex;
+  align-items: center;
+}
+.NavHeader-inner header h1 {
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0 2em;
+}
+
+.NavHeader-inner li a {
+  font-weight: 500;
+  font-color: #333;
+}
+
+.NavHeader-inner .search {
+  width: 50px;
+  height: 80px;
+  background-image: url(https://www.jcu.edu.au/__data/assets/file/0004/644044/icon-search.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}

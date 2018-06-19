@@ -1,0 +1,60 @@
+
+
+:root {
+  --light: #ddd;
+  --midlight: #aaa;
+  --mid: #888;
+  --middark: #666;
+  --dark: #444;
+
+  --edge: #eee;
+  --link: #349;
+  --highlight: #f0f6ff;
+
+  --width: 70rem;
+  --short: 18rem;
+
+  --pad: 3rem;
+  --twopad: calc(var(--pad) * 2);
+  --halfpad: calc(var(--pad) / 2);
+  --qpad: calc(var(--pad) / 4);
+  --negpad: calc(var(--pad) * -1);
+
+  --base-font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, body {
+  font-family:
+        "Open Sans", /* added to match JCU's new site */
+        -apple-system,       /* default macOS font for Safari/webkit */
+        BlinkMacSystemFont,  /* default macOS font for Chrome/blink */
+        "Segoe UI",          /* default Windows font */
+        "Roboto",            /* default Android font */
+        "Fira Sans",         /* default Mozilla font */
+        "Droid Sans",        /* default older Android font */
+        "Helvetica Neue",    /* everyone else */
+        sans-serif;          /* Blackberry users, lol */
+  font-weight: 200;
+  font-size: var(--base-font-size);
+  line-height: 1.5;
+  background: white;
+}
+
+li { display: block; }
+b, strong { font-weight: bold }
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+

@@ -1,0 +1,37 @@
+
+.InterestBlobs .blobs {
+  display: inline-block;
+}
+
+.InterestBlobs .blobs > li {
+  position: relative;
+  display: inline-block;
+  background-color: #eee;
+  border-radius: 1em;
+  padding: 0.2em 1em;
+  margin: 0 0.5em;
+}
+
+.InterestBlobs .path > li {
+  display: none;
+  font-size: 80%;
+  line-height: 1.25;
+}
+
+.InterestBlobs .blobs > li:hover .path > li {
+  display: inline;
+}
+
+.InterestBlobs .path > li::after {
+  content: ' > ';
+}
+
+.InterestBlobs .path > li:last-of-type {
+  display: inline;
+  font-size: 100%;
+  line-height: 1;
+}
+
+.InterestBlobs .path > li:last-of-type::after {
+  content: '';
+}

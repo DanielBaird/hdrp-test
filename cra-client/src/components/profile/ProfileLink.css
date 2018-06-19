@@ -1,0 +1,27 @@
+
+.ProfileLink {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.1em 0;
+}
+
+.ProfileLink a::before {
+  display: inline-block;
+  content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Blog.png);
+  margin-right: 10px;
+  vertical-align: middle;
+  filter: grayscale(100%);
+  transition: 0.66s;
+}
+.ProfileLink a:hover::before {
+  filter: grayscale(0%);
+}
+
+.ProfileLink .pl-orcid::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/ORCID.png); }
+.ProfileLink .pl-twitter::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Twitter.png); }
+.ProfileLink .pl-website::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Homepage.png); }
+.ProfileLink .pl-academia::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Academia_edu.png); }
+.ProfileLink .pl-researchgate::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/ResearchGate.png); }
+.ProfileLink .pl-theconversation::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/The_Conversation.png); }
+.ProfileLink .pl-googlescholar::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Google_Scholar.png); }
+.ProfileLink .pl-scopus::before { content: url(https://research.jcu.edu.au/portfolio/external-id-icons/Scopus_AuthorID.png); }

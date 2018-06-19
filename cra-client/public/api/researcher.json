@@ -1,0 +1,162 @@
+{
+    "meta": {
+        "whatever": "goes here",
+        "error": null
+    },
+
+    "data": {
+        "orcid": "0000-0002-0252-0320",
+        "email": "david.example@jcu.edu.au",
+        "avatar_url": "https://placecage.com/300/402",
+        "email_id": "david.example",
+        "eprints_url": "https://researchonline.jcu.edu.au/view/jcu/EDC7E03B41C8593B67CB1980126251DD.html",
+        "first_name": "David",
+        "login_id": "jc123456",
+        "surname": "Example",
+        "telephone": [
+            "+61 7 4781 99999"
+        ],
+        "salutation": "Associate Professor",
+        "suffix": "AM, PhD <i>JCU</i>, MBA, SSC, BSC M<sup>c</sup>Donalds Ball Pit",
+        "supervision_level": null,
+        "supervision_level": "Primary Advisor (P)",
+        "is_adjunct": false,
+
+        "biography": "This is my <strong>HTML</strong> biography",
+
+        "research_areas": [
+            ["Fiction", "Movies", "Animation", "Disney", "Snow White", "Dwarfs"],
+            ["Fiction", "Novels", "Fantasy", "Tolkien", "Middle-earth", "Dwarfs"]
+        ],
+
+        "campus": "Townsville",
+        "position": "Senior Lecturer",
+        "faculty_code": 6,
+        "faculty": "Division of Tropical Environments & Societies",
+        "school": "College of Business, Law & Governance",
+        "school_association": "221000",
+        "centre_association": "cssp",
+
+        "external_ids": [
+            {
+                "type": "Twitter",
+                "text": "@davidjb_",
+                "url": "https://twitter.com/davidjb_"
+            },
+            {
+                "type": "Google Scholar",
+                "text": "David X Example",
+                "url": "https://googles.scholarzz.abc.xyz/DXE"
+            }
+        ],
+
+
+        "locations": [
+            {
+                "location": "17.144",
+                "region": "Townsville",
+                "map_url": "https://maps.jcu.edu.au/campus/townsville/?location=102"
+            }
+        ],
+
+        "keywords": {
+            "A": 1,
+            "random": 6,
+            "collection": 10
+        },
+
+        "publications": [
+            {
+                "type": "Book Chapter",
+                "authors": "Example DJ",
+                "year": 2012,
+                "content": "(2012) <a href=\"https://researchonline.jcu.edu.au/\"><em>Test publication</em></a> Test Review, 64 (4). pp. 1209-1241"
+            }
+        ],
+
+        "research_projects": [
+            {
+                "admin_organisation": "Example University",
+                "application_id": 12345,
+                "associates": "Example City Council",
+                "chief_investigators": "<a href=\"http://www.root/david.example\">David Example</a>",
+                "count": null,
+                "fund_name": "Project Grant",
+                "funding": 1234.0,
+                "keywords": "Example; test; keyword",
+                "orgus": "Medicine & Dentistry, <i>The University of Examples</i>",
+                "partners": "Smithford and sons",
+                "project_title": "Example project title",
+                "start_year": 2012,
+                "summary": "An example summary",
+                "years_remaining": "over 5 years"
+            }
+        ],
+
+        "supervision": [
+            {
+                "record_id": 1,
+                "status": "Completed",
+                "research_type": "PhD",
+                "type": "Principal Supervisor",
+                "thesis": "An example thesis",
+                "year_completed": 2012
+            }
+        ],
+
+        "teaching_subjects": [
+            {
+                "campus": "Townsville",
+                "level": 3,
+                "code": "LA3106",
+                "name": "Company and Partnership Law",
+                "url": "https://secure.jcu.edu.au/app/studyfinder/?subject=LA3106"
+            }
+        ],
+
+        "interests": [
+            { "name": "Test", "type": "Research" },
+            { "name": "Test", "type": "Teaching" }
+        ],
+
+        "experience": [
+            {
+                "start_year": 2012,
+                "end_year": 2013,
+                "position": "Test Position",
+                "institution": "JCU",
+                "location": "Townsville"
+            },{
+                "start_year": 2010,
+                "end_year": 2012,
+                "position": "Test Position Old",
+                "institution": "JCU",
+                "location": "Cairns"
+            }
+        ],
+
+        "honours": [
+            {
+                "start_year": 2012,
+                "type": "Award",
+                "title": "Test Award"
+            },{
+                "start_year": 1995,
+                "end_year": 2007,
+                "type": "Membership",
+                "title": "Cheese of the month club"
+            },{
+                "start_year": 2011,
+                "end_year": 2012,
+                "type": "Fellowship",
+                "title": "Top Jobbie, there, fellow"
+            }            
+        ]
+
+    }
+}
+
+
+
+
+

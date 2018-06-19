@@ -1,0 +1,10 @@
+{
+    "meta": {
+        "whatever": "goes here",
+        "error": null
+    },
+
+    "data": {
+        "avatarUrl": "https://placecage.com/c/300/300"
+    }
+}
