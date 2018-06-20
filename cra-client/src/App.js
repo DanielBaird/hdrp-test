@@ -220,7 +220,7 @@ class App extends Component {
             </section>
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
             <section className="more">
-              To see these publications and more, visit <a href="#">ResearchOnline@JCU</a>.
+              To see these publications and more, visit <a href="">ResearchOnline@JCU</a>.
             </section>
             {/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */}
             <section className="pubsummary"><span className="display-4">10</span> datasets stored in ResearchData</section>
@@ -376,31 +376,31 @@ class App extends Component {
 
 <footer className="p-y-2 bg-inverse text-inverse">
   <section className="logo">
-    <p><a className="text-inverse" href="#"><img className="jcu-footer__brand-img" src="https://web.jcu.io/dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Australia logo" /></a></p>
+    <p><a className="text-inverse" href=""><img className="jcu-footer__brand-img" src="https://web.jcu.io/dist/images/jcua-logo-mono-reversed.svg" alt="James Cook University Australia logo" /></a></p>
   </section>
   <section className="navigate">
     <ul>
-      <li><a href="#">Centres</a></li>
-      <li><a href="#">Institutes</a></li>
-      <li><a href="#">College Profiles</a></li>
-      <li><a href="#">jcu.me</a></li>
+      <li><a href="">Centres</a></li>
+      <li><a href="">Institutes</a></li>
+      <li><a href="">College Profiles</a></li>
+      <li><a href="">jcu.me</a></li>
     </ul>
   </section>
   <section className="connect">
     <ul>
-      <li><a href="#">Find an Advisor</a></li>
-      <li><a href="#">Research Students</a></li>
-      <li><a href="#">Collaboration</a></li>
-      <li><a href="#">Search</a></li>
+      <li><a href="">Find an Advisor</a></li>
+      <li><a href="">Research Students</a></li>
+      <li><a href="">Collaboration</a></li>
+      <li><a href="">Search</a></li>
     </ul>
   </section>
   <section className="about">
     <ul>
-      <li><a href="#">What is the Research Portfolio?</a></li>
-      <li><a href="#">New Features</a></li>
-      <li><a href="#">Help Guide</a></li>
-      <li><a href="#">About Content</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="">What is the Research Portfolio?</a></li>
+      <li><a href="">New Features</a></li>
+      <li><a href="">Help Guide</a></li>
+      <li><a href="">About Content</a></li>
+      <li><a href="">Contact</a></li>
     </ul>
   </section>
     <p><a className="text-inverse page-scroll" href="#page-top"><span className="icon-chevronup" aria-hidden="true"></span> Back to top</a></p>

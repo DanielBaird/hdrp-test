@@ -3,8 +3,9 @@
   max-width: 65.625rem;
   margin: 3rem auto 0;
   text-align: center;
-  --icon-size: 4rem;
+  --icon-size: 3.66rem;
   line-height: var(--icon-size);
+  padding: 3.5rem 0;
 }
 
 .SocialFooter-head {
