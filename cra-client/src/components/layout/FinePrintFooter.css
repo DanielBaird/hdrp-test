@@ -1,0 +1,101 @@
+
+.FinePrintFooter {
+  background-color: #e9e9e9;
+}
+
+/* traditional section --------------------------------- */
+
+.FinePrintFooter .traditional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 65.625rem;
+  margin: 0 auto;
+  font-size: 0.6rem;
+}
+
+.FinePrintFooter .flag {
+  height: 33px;
+  order: 1;
+  margin: 0 0.8125rem 0.8125rem;
+}
+
+.FinePrintFooter .flag img {
+  height: 100%;
+}
+
+.FinePrintFooter .traditional p {
+  margin: 0 0.8125rem 0.8125rem;
+}
+
+@media (min-width: 43.75rem) {
+
+  .FinePrintFooter .traditional {
+    flex-wrap: nowrap;
+  }
+
+  .FinePrintFooter .traditional p {
+    max-width: 30rem;
+  }
+
+  .FinePrintFooter .flag {
+    order: initial;
+    margin: 0 0.8125rem;
+  }
+}
+
+/* logos section --------------------------------------- */
+
+.FinePrintFooter .logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1.875rem 0 1.25rem;
+}
+
+.FinePrintFooter .logos a {
+  margin: 0 2.1875rem;
+}
+
+.FinePrintFooter .logos a img {
+  width: 6.5rem;
+}
+
+/* copyright section ----------------------------------- */
+
+.FinePrintFooter .copyright {
+  max-width: 65.625rem;
+  margin: 0 auto 1rem;
+  font-size: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.FinePrintFooter .copyright li {
+  margin: 0 0.3125rem;
+}
+
+/* legal section --------------------------------------- */
+
+.FinePrintFooter .legal {
+  max-width: 65.625rem;
+  margin: 0 auto 1rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.FinePrintFooter .legal li {
+  padding: 0 0.625rem;
+  border-left: 1px solid #666;
+  border-image: linear-gradient(to bottom, #ccc, #000, #ccc) 1 100%;
+}
+
+.FinePrintFooter .legal li:first-of-type {
+  border-left: none;
+}
+

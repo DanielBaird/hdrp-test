@@ -16,6 +16,11 @@ body {
   position: fixed;
   width: 100%;
   margin-top: calc(-1 * var(--global-header-height));
+/*
+  color: white;
+  background-color: #024;
+  font-variant: small-caps;
+*/
 }
 
 .GlobalHeader-inner {
